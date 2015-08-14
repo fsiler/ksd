@@ -25,10 +25,7 @@
         "Illuminate\\View\\ViewServiceProvider",
         "KSD_FMS\\Providers\\AppServiceProvider",
         "KSD_FMS\\Providers\\EventServiceProvider",
-        "KSD_FMS\\Providers\\RouteServiceProvider",
-        "Collective\\Html\\HtmlServiceProvider",
-        "Efficiently\\Larasset\\LarassetServiceProvider",
-        "Efficiently\\JqueryLaravel\\JqueryLaravelServiceProvider"
+        "KSD_FMS\\Providers\\RouteServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -44,9 +41,7 @@
         "Illuminate\\View\\ViewServiceProvider",
         "KSD_FMS\\Providers\\AppServiceProvider",
         "KSD_FMS\\Providers\\EventServiceProvider",
-        "KSD_FMS\\Providers\\RouteServiceProvider",
-        "Efficiently\\Larasset\\LarassetServiceProvider",
-        "Efficiently\\JqueryLaravel\\JqueryLaravelServiceProvider"
+        "KSD_FMS\\Providers\\RouteServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",
@@ -130,11 +125,7 @@
         "auth.password": "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
         "auth.password.tokens": "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
         "translator": "Illuminate\\Translation\\TranslationServiceProvider",
-        "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider",
-        "html": "Collective\\Html\\HtmlServiceProvider",
-        "form": "Collective\\Html\\HtmlServiceProvider",
-        "Collective\\Html\\HtmlBuilder": "Collective\\Html\\HtmlServiceProvider",
-        "Collective\\Html\\FormBuilder": "Collective\\Html\\HtmlServiceProvider"
+        "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider"
     },
     "when": {
         "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
@@ -148,7 +139,6 @@
         "Illuminate\\Queue\\QueueServiceProvider": [],
         "Illuminate\\Redis\\RedisServiceProvider": [],
         "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [],
-        "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Collective\\Html\\HtmlServiceProvider": []
+        "Illuminate\\Translation\\TranslationServiceProvider": []
     }
 }

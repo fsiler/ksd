@@ -144,11 +144,6 @@ return [
         KSD_FMS\Providers\EventServiceProvider::class,
         KSD_FMS\Providers\RouteServiceProvider::class,
 
-        // Larasset
-        'Collective\Html\HtmlServiceProvider',
-        'Efficiently\Larasset\LarassetServiceProvider',
-        'Efficiently\JqueryLaravel\JqueryLaravelServiceProvider',
-
     ],
 
     /*
@@ -197,10 +192,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        // Larasset
-        'Form' => 'Collective\Html\FormFacade',
-        'HTML' => 'Collective\Html\HtmlFacade',
-        'Asset' => 'Efficiently\Larasset\Facades\Asset',
     ],
 
 ];

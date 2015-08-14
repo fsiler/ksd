@@ -18,8 +18,6 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \KSD_FMS\Http\Middleware\VerifyCsrfToken::class,
-        // Larasset
-        'Efficiently\JqueryLaravel\VerifyJavascriptResponse',
     ];
 
     /**
