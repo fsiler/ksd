@@ -4,7 +4,7 @@
 project developed as a code demonstration; released under MIT or BSD 3-clause license
 
 # Requirements as provided in "Instructions" document
-### KSD Code Exercise Instructions
+### KSD [Code Exercise Instructions](KSD Code Exercise.v2.pdf)
 The following is the code exercise that we give our candidates.
 The objective here is to understand your process and not necessarily to create a full-fledged working system.
 You can build your solution using any web-based technologies you wish as long as it uses a relational database on its backend (MySQL, Sqlite, Postgres, etc) and HTML, CSS, and Javascript on its frontend.
