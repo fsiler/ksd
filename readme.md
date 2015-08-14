@@ -59,8 +59,11 @@ However, I did create proper migrations for these, so they [should also work in 
 1. Absent a list of browser requirements, I chose HTML5, Bootstrap, and jQuery as starting points.
 1. I chose to document the requirements and my commentary in Markdown.
 There are also some code comments where they might be relevant to later bugfixes and improvements.
+1. I made an affirmative decision to spend more time learning the framework and available abstractions than coding manually.
+2. I did, however, simply run out of time for a few things that would have been nice.  There wasn't time to delve into the ORM features, though they look nice: for example, it would have been easily possible to add an "undelete" feature if the stack was resting on the ORM instead of more directly on the database.
 1. Some of the criteria concerned me; for example, allowing a serial number to be "anything" could result in someone putting an entire Kafka novel in the field.  Since the requirement seems explicit that there is no length limit, I used a text field in the database but noted that I should probably limit the displayed length in the browser.  A better solution would be to have the overage display on mouseover.
 1. I built the app and this document both on my Dreamhost shared hosting account and on my Macbook Pro running OS 10.9.5.  There are many merges in version control resulting from my deliberate alternating between machines to ensure that features would work "across the board".
+2. I'm writing in active voice.  Scientists tend to use passive voice for lab reports, but I don't like the implication that coding fairies came in and did the work here.
 
 ## Testing
 - [W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffranksiler.com%2Fksd%2Fpublic%2F)
@@ -69,6 +72,8 @@ There are also some code comments where they might be relevant to later bugfixes
 
 ## Time spent
 Firstly, it should be noted that I haven't built a PHP app in several years- and what I wrote when I was an undergrad was not all that wonderful.
+However, I'm a reasonably quick study.
+I hope that this writing demonstrates some learned habits of documentation for myself, if not others.
 
 I spent much time up front wrangling with which frameworks to use.  In the process of building the [legal match engine](https://bitbucket.org/peopleconnector/peopleconnector/overview), I went through about four different WordPress plugins before deciding that I would be better off starting from scratch and learning a new platform.
 
@@ -77,12 +82,14 @@ I also spent a lot of time in the "think tank" deciding that I wanted, if possib
 * unified search implemented in the page rather than hitting the db
 * quick and easy row updates, but with some protection against accidental deletion
 * no need for pagination, at least early on; but this should be easily added later
+* I assumed that all values are required (e.g., "NOT NULL").  It wouldn't do much good to put equipment in the system without a room number, for example.  This assumption is easily changed, of course.
 * ideally, use identical, reusable components for the location and items tables frontends so that both could be edited easily.  Notably, the "locations" table has a cascade problem on delete: what should you do with any items assigned to a location which will go missing?  Ideally, you would offer to consolidate them with another location.
 
 Finally, I spent quite a lot of time writing this file, and I committed that I would at least keep track of "gotchas" as I discovered them so that I could submit patches or at least bug reports if I had time.
 
 Once settling on Laravel, actually doing the db schema and writing HTML went smoothly- I wanted to get a functional prototype and then add some niceties.
 
+Finally, of course- development doesn't happen in a vacuum.  It happens with the benefit of a lot of tooling and searching and documentation, and I'm grateful that I took the time up-front to find frameworks that are well-built and reasonably documented.  I did, however, find some non-critical but annoying bugs in my dependency chain.
 
 ## Found Bugs
 - `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.
