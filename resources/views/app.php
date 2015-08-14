@@ -11,6 +11,7 @@
 <tr><th>Name</th><th>Serial</th><th>Type</th><th>Room</th><th>City</th><th>Date</th></tr>
 <?
 // generate table
+var_dump(Schema::getColumnListing('users'));
 
 ?>
             </table>
