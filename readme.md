@@ -52,6 +52,7 @@ You can write the SQL queries yourself, or use model-based abstractions from an 
 
 # Design, Approach, Tooling
 1. I used Composer/Packagist for dependency management; the essence here is to be able to easily update underlying software as bugfixes and security patches are released.
+1. component-installer 
 1. The app itself is built on Laravel on top of SQLite for ease of portability.
 This way, I can easily work offline on a laptop (a frequent occurrence) and use version control to easily update live code.
 However, I did create proper migrations for these, so they [should also work in MySQL, Postgres, and SQL Server](http://laravel.com/docs/5.1/database#introduction).
@@ -67,6 +68,7 @@ There are also some code comments where they might be relevant to later bugfixes
 
 ## Testing
 - [W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffranksiler.com%2Fksd%2Fpublic%2F)
+- Database seeding included strings that shouldn't be in the database and strings designed to test the HTML escaping.
 - Manual form entry to test escaping of ampersands, carets, etc.  Although the exercise says not to worry about security, input sanitation is an essential and integral part of web dev.
 - Selenium (future)
 
