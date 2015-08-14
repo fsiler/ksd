@@ -14,21 +14,22 @@ class AddLocationsAssets extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('location');
+            $table->text('Location');
             $table->timestamps();
         });
 
         Schema::create('asset_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('type');
+            $table->text('Type');
             $table->timestamps();
         });
 
         Schema::create('assets', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
-            $table->text('serial');
-            $table->text('room');
+            $table->text('Name');
+            $table->text('Serial');
+            $table->text('Room');
+            $table->date('Date')->default("now"); // assuming this should not be editable
             $table->timestamps();
         });
     }

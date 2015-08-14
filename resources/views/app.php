@@ -8,12 +8,15 @@
 <?php //search ?>
 
 <table>
-<tr><th>Name</th><th>Serial</th><th>Type</th><th>Room</th><th>City</th><th>Date</th></tr>
-<?
-// generate table
-var_dump(Schema::getColumnListing('users'));
-
-?>
+<tr><?  // generate header row
+foreach (Schema::getColumnListing('assets') as $index=>$name)
+{
+    if(ctype_upper($name[0]))
+    {
+        echo "<th>$name</th>";
+    }
+}
+?></tr>
             </table>
 <?
 // "add new" stuff
