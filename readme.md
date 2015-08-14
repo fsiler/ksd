@@ -1,6 +1,7 @@
 # FMS_KSD
-Franklin M. Siler <me@franksiler.com> project developed as a code demonstration; released under MIT/BSD 3-clause permissive license
+###Franklin M. Siler     <me@franksiler.com>
 
+project developed as a code demonstration; released under MIT or BSD 3-clause license
 
 # Requirements as provided in "Instructions" document
 ### KSD Code Exercise Instructions
@@ -44,7 +45,6 @@ The design of the user interface is left up to you.
 Feel free to use any Javascript or CSS libraries/frameworks you like (such as Bootstrap or Foundation).
 It does not need to be perfect or necessarily pretty.
 Functionality, intuitiveness, and usability are much more important.
-
 ### Back End
 As mentioned, please use a modern web framework (PHP preferred) of your choosing along with a relational database you feel comfortable working with (MySQL preferred).
 You can write the SQL queries yourself, or use model-based abstractions from an ORM you like.
@@ -54,14 +54,41 @@ You can write the SQL queries yourself, or use model-based abstractions from an 
 1. I used Composer/Packagist for dependency management; the essence here is to be able to easily update underlying software as bugfixes and security patches are released.
 1. The app itself is built on Laravel on top of SQLite for ease of portability.
 This way, I can easily work offline on a laptop (a frequent occurrence) and use version control to easily update live code.
-2. I worked internally in Mercurial and converted the project to git for publication on github.
-3. I chose to document the requirements and my commentary in Markdown.
+However, I did create proper migrations for these, so they [should also work in MySQL, Postgres, and SQL Server](http://laravel.com/docs/5.1/database#introduction).
+1. I used Mercurial for dVCS while working and then converted to git for publication on github.
+1. Absent a list of browser requirements, I chose HTML5, Bootstrap, and jQuery as starting points.
+1. I chose to document the requirements and my commentary in Markdown.
 There are also some code comments where they might be relevant to later bugfixes and improvements.
+1. Some of the criteria concerned me; for example, allowing a serial number to be "anything" could result in someone putting an entire Kafka novel in the field.  Since the requirement seems explicit that there is no length limit, I used a text field in the database but noted that I should probably limit the displayed length in the browser.  A better solution would be to have the overage display on mouseover.
+1. I built the app and this document both on my Dreamhost shared hosting account and on my Macbook Pro running OS 10.9.5.  There are many merges in version control resulting from my deliberate alternating between machines to ensure that features would work "across the board".
+
+## Testing
+- [W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffranksiler.com%2Fksd%2Fpublic%2F)
+- Manual form entry to test escaping of ampersands, carets, etc.  Although the exercise says not to worry about security, input sanitation is an essential and integral part of web dev.
+- Selenium (future)
+
+## Time spent
+Firstly, it should be noted that I haven't built a PHP app in several years- and what I wrote when I was an undergrad was not all that wonderful.
+
+I spent much time up front wrangling with which frameworks to use.  In the process of building the [legal match engine](https://bitbucket.org/peopleconnector/peopleconnector/overview), I went through about four different WordPress plugins before deciding that I would be better off starting from scratch and learning a new platform.
+
+I also spent a lot of time in the "think tank" deciding that I wanted, if possible:
+
+* unified search implemented in the page rather than hitting the db
+* quick and easy row updates, but with some protection against accidental deletion
+* no need for pagination, at least early on; but this should be easily added later
+* ideally, use identical, reusable components for the location and items tables frontends so that both could be edited easily.  Notably, the "locations" table has a cascade problem on delete: what should you do with any items assigned to a location which will go missing?  Ideally, you would offer to consolidate them with another location.
+
+Finally, I spent quite a lot of time writing this file, and I committed that I would at least keep track of "gotchas" as I discovered them so that I could submit patches or at least bug reports if I had time.
+
+Once settling on Laravel, actually doing the db schema and writing HTML went smoothly- I wanted to get a functional prototype and then add some niceties.
+
 
 ## Found Bugs
 - `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.
 I discovered this by performing `artisan app:name "KSD Frank Siler"`; this broke the tree in a way that would not be easily reversible; fortunately I did `hg revert --all` and got back a clean tree.
 It would be appropriate to add a syntax check to `artisan app:name` so that this cannot occur.
+- `artisan make:migration` doesn't seem to correctly handle multiple ``--create`` flags.
 
 ## Dead Ends
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  One consequence of not using this is that jQuery and Bootstrap version numbers will have to be manually updated.
