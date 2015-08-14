@@ -1,3 +1,4 @@
 syntax:glob
 storage/framework
 storage/logs
+bootstrap/cache
