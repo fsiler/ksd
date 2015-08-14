@@ -1,0 +1,10 @@
+/vendor
+.DS_Store
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+/node_modules
+/nbproject
+/*.sublime-*
