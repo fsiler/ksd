@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace KSD_FMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

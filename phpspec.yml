@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: KSD_FMS
+        psr4_prefix: KSD_FMS
         src_path: app

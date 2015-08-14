@@ -11,6 +11,8 @@
 |
 */
 
+// TODO: CSRF, form protection
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('app', ['name' => 'Frank']);
 });

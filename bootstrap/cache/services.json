@@ -23,9 +23,9 @@
         "Illuminate\\Translation\\TranslationServiceProvider",
         "Illuminate\\Validation\\ValidationServiceProvider",
         "Illuminate\\View\\ViewServiceProvider",
-        "App\\Providers\\AppServiceProvider",
-        "App\\Providers\\EventServiceProvider",
-        "App\\Providers\\RouteServiceProvider"
+        "KSD_FMS\\Providers\\AppServiceProvider",
+        "KSD_FMS\\Providers\\EventServiceProvider",
+        "KSD_FMS\\Providers\\RouteServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -39,9 +39,9 @@
         "Illuminate\\Session\\SessionServiceProvider",
         "Illuminate\\Validation\\ValidationServiceProvider",
         "Illuminate\\View\\ViewServiceProvider",
-        "App\\Providers\\AppServiceProvider",
-        "App\\Providers\\EventServiceProvider",
-        "App\\Providers\\RouteServiceProvider"
+        "KSD_FMS\\Providers\\AppServiceProvider",
+        "KSD_FMS\\Providers\\EventServiceProvider",
+        "KSD_FMS\\Providers\\RouteServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",

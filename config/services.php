@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => App\User::class,
+        'model'  => KSD_FMS\User::class,
         'key'    => '',
         'secret' => '',
     ],

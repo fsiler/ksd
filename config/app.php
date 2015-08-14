@@ -140,9 +140,9 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        KSD_FMS\Providers\AppServiceProvider::class,
+        KSD_FMS\Providers\EventServiceProvider::class,
+        KSD_FMS\Providers\RouteServiceProvider::class,
 
     ],
 

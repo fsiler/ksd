@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace KSD_FMS\Events;
 
 abstract class Event
 {

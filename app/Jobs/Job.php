@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace KSD_FMS\Jobs;
 
 use Illuminate\Bus\Queueable;
 
