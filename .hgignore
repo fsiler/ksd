@@ -1,4 +1,3 @@
 syntax:glob
-storage/framework
-storage/logs
+storage/
 bootstrap/cache

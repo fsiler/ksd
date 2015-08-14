@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddLocationsAssets' => $baseDir . '/database/migrations/2015_08_14_075739_add_locations_assets.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'ClassPreloader\\ClassList' => $vendorDir . '/classpreloader/classpreloader/src/ClassList.php',
