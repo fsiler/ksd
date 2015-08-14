@@ -63,6 +63,9 @@ There are also some code comments where they might be relevant to later bugfixes
 I discovered this by performing `artisan app:name "KSD Frank Siler"`; this broke the tree in a way that would not be easily reversible; fortunately I did `hg revert --all` and got back a clean tree.
 It would be appropriate to add a syntax check to `artisan app:name` so that this cannot occur.
 
+## Dead Ends
+- Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  One consequence of not using this is that jQuery and Bootstrap version numbers will have to be manually updated.
+
 ## Below this is boilerplate from Laravel's `readme.md`
 ### Laravel PHP Framework
 
