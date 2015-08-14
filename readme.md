@@ -59,6 +59,8 @@ However, I did create proper migrations for these, so they [should also work in 
 1. Absent a list of browser requirements, I chose HTML5, Bootstrap, and jQuery as starting points.
 1. I chose to document the requirements and my commentary in Markdown.
 There are also some code comments where they might be relevant to later bugfixes and improvements.
+1. I made an affirmative decision to spend more time learning the framework and available abstractions than coding manually.
+2. I did, however, simply run out of time for a few things that would have been nice.  There wasn't time to delve into the ORM features, though they look nice: for example, it would have been easily possible to add an "undelete" feature if the stack was resting on the ORM instead of more directly on the database.
 1. Some of the criteria concerned me; for example, allowing a serial number to be "anything" could result in someone putting an entire Kafka novel in the field.  Since the requirement seems explicit that there is no length limit, I used a text field in the database but noted that I should probably limit the displayed length in the browser.  A better solution would be to have the overage display on mouseover.
 1. I built the app and this document both on my Dreamhost shared hosting account and on my Macbook Pro running OS 10.9.5.  There are many merges in version control resulting from my deliberate alternating between machines to ensure that features would work "across the board".
 2. I'm writing in active voice.  Scientists tend to use passive voice for lab reports, but I don't like the implication that coding fairies came in and did the work here.
