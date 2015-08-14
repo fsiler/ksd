@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f5a5d9ef8b5b6551216ad18f262e4f26",
+    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -215,135 +215,6 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
-        },
-        {
-            "name": "efficiently/jquery-laravel",
-            "version": "2.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/efficiently/jquery-laravel.git",
-                "reference": "b6e1513da09ea931b3f50ee245ef4c0d69ad3043"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/efficiently/jquery-laravel/zipball/b6e1513da09ea931b3f50ee245ef4c0d69ad3043",
-                "reference": "b6e1513da09ea931b3f50ee245ef4c0d69ad3043",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0.0||~5.1.0 ",
-                "laravelcollective/html": "~5.0.0||~5.1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "anahkiasen/former": "~4.0.0",
-                "mockery/mockery": "0.9.*",
-                "orchestra/testbench": "~3.0.0||~3.1.0",
-                "phpunit/phpunit": "~4.5"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Efficiently/JqueryLaravel/helpers.php"
-                ],
-                "psr-0": {
-                    "Efficiently\\JqueryLaravel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tortue Torche",
-                    "email": "tortuetorche@spam.me"
-                }
-            ],
-            "description": "This package provides jQuery and the jQuery-ujs driver for your Laravel 5.0 application.",
-            "keywords": [
-                "ajax",
-                "asset pipeline",
-                "assets",
-                "javascript",
-                "jquery",
-                "larasset",
-                "laravel",
-                "laravel 5",
-                "pipeline",
-                "ujs",
-                "unobtrusive"
-            ],
-            "time": "2015-07-22 12:05:31"
-        },
-        {
-            "name": "efficiently/larasset",
-            "version": "1.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/efficiently/larasset.git",
-                "reference": "941cb6a3b6cf632121d29e73b96238fa7067b7dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/efficiently/larasset/zipball/941cb6a3b6cf632121d29e73b96238fa7067b7dd",
-                "reference": "941cb6a3b6cf632121d29e73b96238fa7067b7dd",
-                "shasum": ""
-            },
-            "require": {
-                "efficiently/jquery-laravel": "~2.0.0",
-                "laravelcollective/html": "~5.0.0||~5.1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "illuminate/console": "~5.0",
-                "illuminate/support": "~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [],
-                "files": [
-                    "src/Efficiently/Larasset/helpers.php"
-                ],
-                "psr-0": {
-                    "Efficiently\\Larasset\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tortue Torche",
-                    "email": "tortuetorche@spam.me"
-                }
-            ],
-            "description": "Larasset is a library for Laravel 5 which manage assets in an easy way.",
-            "keywords": [
-                "Laravel 5.1",
-                "Sprockets",
-                "asset-pipeline",
-                "assets",
-                "coffeescript",
-                "css",
-                "javascript",
-                "laravel",
-                "laravel 5",
-                "less",
-                "manifest",
-                "mincer",
-                "minify",
-                "node",
-                "pipeline",
-                "precompile",
-                "sass",
-                "scss",
-                "source-map",
-                "sourcemaps",
-                "versioning"
-            ],
-            "time": "2015-07-22 09:35:32"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -617,56 +488,6 @@
                 "laravel"
             ],
             "time": "2015-08-12 18:16:08"
-        },
-        {
-            "name": "laravelcollective/html",
-            "version": "5.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/59f124084c9135a6a8d87323e5c5562ab823deb4",
-                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/http": "5.1.*",
-                "illuminate/routing": "5.1.*",
-                "illuminate/session": "5.1.*",
-                "illuminate/support": "5.1.*",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Collective\\Html\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                },
-                {
-                    "name": "Adam Engebretson",
-                    "email": "adam@laravelcollective.com"
-                }
-            ],
-            "time": "2015-07-28 03:18:41"
         },
         {
             "name": "league/flysystem",
@@ -3102,7 +2923,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
