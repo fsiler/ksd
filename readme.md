@@ -50,7 +50,7 @@ As mentioned, please use a modern web framework (PHP preferred) of your choosing
 You can write the SQL queries yourself, or use model-based abstractions from an ORM you like.
 
 
-# Design and Approch
+# Design, Approach, Tooling
 1. I used Composer/Packagist for dependency management; the essence here is to be able to easily update underlying software as bugfixes and security patches are released.
 1. The app itself is built on Laravel on top of SQLite for ease of portability.
 This way, I can easily work offline on a laptop (a frequent occurrence) and use version control to easily update live code.
@@ -58,8 +58,12 @@ This way, I can easily work offline on a laptop (a frequent occurrence) and use 
 3. I chose to document the requirements and my commentary in Markdown.
 There are also some code comments where they might be relevant to later bugfixes and improvements.
 
-## Tooling
+## Found Bugs
+- `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.
+I discovered this by performing `artisan app:name "KSD Frank Siler"`; this broke the tree in a way that would not be easily reversible; fortunately I did `hg revert --all` and got back a clean tree.
+It would be appropriate to add a syntax check to `artisan app:name` so that this cannot occur.
 
+## Below this is boilerplate from Laravel's `readme.md`
 ### Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
