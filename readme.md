@@ -100,7 +100,7 @@ It would be appropriate to add a syntax check to `artisan app:name` so that this
 - `artisan make:migration` doesn't seem to correctly handle multiple ``--create`` flags.
 
 ## Dead Ends
-- Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  One consequence of not using this is that jQuery and Bootstrap version numbers will have to be manually updated.
+- Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.
 
 ## Below this is boilerplate from Laravel's `readme.md`
 ### Laravel PHP Framework
