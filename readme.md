@@ -94,10 +94,12 @@ Once settling on Laravel, actually doing the db schema and writing HTML went smo
 Finally, of course- development doesn't happen in a vacuum.  It happens with the benefit of a lot of tooling and searching and documentation, and I'm grateful that I took the time up-front to find frameworks that are well-built and reasonably documented.  I did, however, find some non-critical but annoying bugs in my dependency chain.
 
 ## Found Bugs
-- `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.
+
+* `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.
 I discovered this by performing `artisan app:name "KSD Frank Siler"`; this broke the tree in a way that would not be easily reversible; fortunately I did `hg revert --all` and got back a clean tree.
 It would be appropriate to add a syntax check to `artisan app:name` so that this cannot occur.
-- `artisan make:migration` doesn't seem to correctly handle multiple ``--create`` flags.
+*  `artisan make:migration` doesn't seem to correctly handle multiple ``--create`` flags.
+*  `artisan` has many options but no autocorrect/suggest feature.
 
 ## Dead Ends
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.
