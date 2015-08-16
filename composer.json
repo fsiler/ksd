@@ -7,11 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "components/datatables": "^1.10",
-        "components/jquery": "^2.1",
-        "robloach/component-installer": "^0.2.3",
-        "components/bootstrap": "^3.3",
-        "components/bootstrap-default": "^3.3"
+        "fxp/composer-asset-plugin": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

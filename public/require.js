@@ -2025,10 +2025,6 @@ var components = {
             "main": "bootstrap-built.js"
         },
         {
-            "name": "datatables",
-            "main": "datatables-built.js"
-        },
-        {
             "name": "jquery",
             "main": "jquery-built.js"
         }
