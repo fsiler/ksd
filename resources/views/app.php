@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <title>KSD inventory example</title>
  <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="bootstrap-default/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-default/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -59,6 +59,6 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
 </div>
 
 
-<script src="jquery/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body></html>

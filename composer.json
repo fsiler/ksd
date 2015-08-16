@@ -7,7 +7,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "fxp/composer-asset-plugin": "~1.0"
+        "fxp/composer-asset-plugin": "~1.0",
+        "bower-asset/bootstrap": "^3.3",
+        "bower-asset/datatables": "^1.10"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -27,6 +29,12 @@
         "classmap": [
             "tests/TestCase.php"
         ]
+    },
+   "extra": {
+      "asset-installer-paths": {
+         "npm-asset-library": "public",
+         "bower-asset-library": "public"
+      }
     },
     "scripts": {
         "post-install-cmd": [
