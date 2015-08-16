@@ -30,11 +30,11 @@
             "tests/TestCase.php"
         ]
     },
-   "extra": {
-      "asset-installer-paths": {
-         "npm-asset-library": "public",
-         "bower-asset-library": "public"
-      }
+    "extra": {
+       "asset-installer-paths": {
+          "npm-asset-library": "public",
+          "bower-asset-library": "public"
+       }
     },
     "scripts": {
         "post-install-cmd": [
@@ -56,6 +56,5 @@
     },
     "config": {
         "preferred-install": "dist",
-        "component-dir": "public"
     }
 }

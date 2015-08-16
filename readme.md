@@ -101,6 +101,7 @@ It would be appropriate to add a syntax check to `artisan app:name` so that this
 
 ## Dead Ends
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.
+- Composer itself is no good for directly managing assets; however, indirectly using `bower` through the `fxp/composer-asset-plugin` package seems to manage frontend plugins reasonably well.
 
 ## Below this is boilerplate from Laravel's `readme.md`
 ### Laravel PHP Framework
