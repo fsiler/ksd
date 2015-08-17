@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
             [ 'Location' => "Ampersand & Test" ]
         ]);
 
-        DB::table('assets')->insert([
+        DB::table('assets_raw')->insert([
             [ 'location' => 4, 'asset_type' => 1, 'Name' => "Frank's computer", 'Serial' => "S/N 123", 'Room' => "Frank Office" ],
             [ 'location' => 4, 'asset_type' => 2, 'Name' => "Frank's Laptop", 'Serial' => "S/N 234", 'Room' => "Frank Living Room" ],
             [ 'location' => 1, 'asset_type' => 2, 'Name' => "Joe's Laptop", 'Serial' => "S/N 345", 'Room' => "Sprint Space" ],
