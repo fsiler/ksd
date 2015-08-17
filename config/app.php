@@ -144,6 +144,7 @@ return [
         KSD_FMS\Providers\EventServiceProvider::class,
         KSD_FMS\Providers\RouteServiceProvider::class,
 
+        'Stevebauman\EloquentTable\EloquentTableServiceProvider',
     ],
 
     /*

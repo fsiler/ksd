@@ -3327,5 +3327,51 @@
             "security",
             "xss"
         ]
+    },
+    {
+        "name": "stevebauman/eloquenttable",
+        "version": "v1.1.5",
+        "version_normalized": "1.1.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stevebauman/eloquent-table.git",
+            "reference": "90bee9aab6b37430b699c3063baaef3169609a19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stevebauman/eloquent-table/zipball/90bee9aab6b37430b699c3063baaef3169609a19",
+            "reference": "90bee9aab6b37430b699c3063baaef3169609a19",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "4.* | 5.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2015-06-01 17:58:19",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Stevebauman\\EloquentTable\\": "src/Stevebauman/EloquentTable/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Steve Bauman",
+                "email": "steven_bauman_7@hotmail.com"
+            }
+        ],
+        "description": "An HTML table generator for laravel collections",
+        "keywords": [
+            "eloquent",
+            "html",
+            "laravel",
+            "php",
+            "table"
+        ]
     }
 ]

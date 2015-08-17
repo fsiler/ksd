@@ -8,9 +8,10 @@
         "php": ">=5.5.9",
         "laravel/framework": "^5.1",
         "fxp/composer-asset-plugin": "^1.0",
+        "mews/purifier": "^2.0",
+        "stevebauman/eloquenttable": "^1.1",
         "bower-asset/bootstrap": "^3.3",
-        "bower-asset/datatables": "^1.10",
-        "mews/purifier": "^2.0"
+        "bower-asset/datatables": "^1.10"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
