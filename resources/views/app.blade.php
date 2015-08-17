@@ -38,6 +38,7 @@
     </nav>
 
 <div class="container">
+<a href="new" class="btn btn-primary" role="button" style="width: 100%; margin: 7px;">New Item</a>
 {!! KSD_FMS\Asset::get()
     ->columns(array( 'Name', 'Serial', 'Date', 'Room', 'Location', "Type" ))
     ->attributes(array(
@@ -46,6 +47,7 @@
     ->modifyRow('mod1', function($asset) { return array('id' => $asset->id); })
     ->render()
 !!}
+<a href="new" class="btn btn-primary" role="button" style="width: 100%; margin: 7px;">New Item</a>
 </div>
 
 <script src="jquery/dist/jquery.min.js"></script>

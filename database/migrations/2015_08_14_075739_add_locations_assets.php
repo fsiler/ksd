@@ -46,10 +46,10 @@ class AddLocationsAssets extends Migration
                 Name, Serial, Room, Date
                     FROM assets_raw, asset_types, locations
                         WHERE assets_raw.location=locations.id AND assets_raw.asset_type=asset_types.id;");
-        DB::raw("CREATE TRIGGER assets_update INSTEAD OF UPDATE OF locid ON assets
-            BEGIN
-            UPDATE assets_raw SET location=locid WHERE assets.id=id;
-            END;");
+//        DB::raw("CREATE TRIGGER assets_update INSTEAD OF UPDATE OF locid ON assets
+//            BEGIN
+//            UPDATE assets_raw SET location=locid WHERE assets.id=id;
+//            END;");
     }
 
     /**

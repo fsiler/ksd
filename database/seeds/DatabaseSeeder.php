@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         // XXX: don't forget trailing commas
         DB::table('asset_types')->insert([
             [ 'created_at' => "2013-10-07 08:23:19.120", 'updated_at' => "now", 'Type' => "Computer (Desktop)" ],
-            [ 'created_at' => "2013-10-07 08:23:19.120", 'updated_at' => "now", 'Type' => "Computer (Chair)" ],
+            [ 'created_at' => "2013-10-07 08:23:19.120", 'updated_at' => "now", 'Type' => "Computer (Laptop)" ],
             [ 'created_at' => "2013-10-07 08:23:19.120", 'updated_at' => "now", 'Type' => "Desk" ]
         ]);
 
