@@ -24,7 +24,6 @@ return array(
     'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'Stevebauman\\EloquentTable\\' => array($vendorDir . '/stevebauman/eloquenttable/src/Stevebauman/EloquentTable'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
-    'Mews\\Purifier\\' => array($vendorDir . '/mews/purifier/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'KSD_FMS\\' => array($baseDir . '/app'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
