@@ -41,13 +41,15 @@ class AddLocationsAssets extends Migration
             $table->date('Date')->default(gmdate(DATE_ISO8601)); // assuming this should not be editable
             $table->nullabletimestamps();
         });
-        DB::raw("create view if not exists assets as
-                select assets_raw.id as id, locations.location as Location, locations.id as locid, asset_types.type as Type, asset_types.id as tid,
+        DB::raw("CREATE VIEW IF NOT EXISTS assets AS
+                SELECT assets_raw.id as id, locations.location AS Location, locations.id AS locid, asset_types.type AS Type, asset_types.id AS tid,
                 Name, Serial, Room, Date
-                    from assets_raw, asset_types, locations
-                        where assets_raw.location=locations.id and assets_raw.asset_type=asset_types.id;
-            ");
-        DB::raw("create trigger if not exists assets_update INSTEAD OF UPDATE OF locid on assets update assets_raw set location=locid where assets.id=id");
+                    FROM assets_raw, asset_types, locations
+                        WHERE assets_raw.location=locations.id AND assets_raw.asset_type=asset_types.id;");
+        DB::raw("CREATE TRIGGER assets_update INSTEAD OF UPDATE OF locid ON assets
+            BEGIN
+            UPDATE assets_raw SET location=locid WHERE assets.id=id;
+            END;");
     }
 
     /**
