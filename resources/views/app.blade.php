@@ -9,7 +9,7 @@
     <meta name="author" content="Franklin M. Siler <me@franksiler.com>">
     <title>KSD inventory example</title>
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -52,7 +52,7 @@
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="datatables/media/js/jquery.dataTables.min.js"></script>
 <script>
 $(document).ready(function(){
     $('#example').DataTable(
