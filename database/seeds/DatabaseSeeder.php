@@ -29,7 +29,6 @@ class DatabaseSeeder extends Seeder
             [ 'Location' => "Ampersand & Test" ]
         ]);
 
-        // TODO: make this an insertable view rather than a table
         DB::table('assets')->insert([
             [ 'location_id' => 4, 'asset_type' => 1, 'Name' => "Frank's computer", 'Serial' => "S/N 123", 'Room' => "Frank Office" ],
             [ 'location_id' => 4, 'asset_type' => 2, 'Name' => "Frank's Laptop", 'Serial' => "S/N 234", 'Room' => "Frank Living Room" ],

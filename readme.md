@@ -100,6 +100,7 @@ I discovered this by performing `artisan app:name "KSD Frank Siler"`; this broke
 It would be appropriate to add a syntax check to `artisan app:name` so that this cannot occur.
 *  `artisan make:migration` doesn't seem to correctly handle multiple ``--create`` flags.
 *  `artisan` has many options but no autocorrect/suggest feature.
+*  Laravel leaves foreign key constraints off for SQLite by default.  I consider this a serious data integrity bug; I've hand-patched the SQLite connector with code from [https://laracasts.com/discuss/channels/general-discussion/l5-sqlite-foreign-key-support](https://laracasts.com/discuss/channels/general-discussion/l5-sqlite-foreign-key-support).  Will probably file bug report.
 
 ## Dead Ends
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.

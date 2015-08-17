@@ -27,6 +27,7 @@ class AddLocationsAssets extends Migration
             $table->nullabletimestamps();
         });
 
+        // TODO: make this an insertable view rather than a table
         Schema::create('assets', function (Blueprint $table) {
             $table->increments('id');
 
