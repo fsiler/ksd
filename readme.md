@@ -100,6 +100,8 @@ Once settling on Laravel, actually doing the db schema and writing HTML went smo
 
 Finally, of course- development doesn't happen in a vacuum.  It happens with the benefit of a lot of tooling and searching and documentation, and I'm grateful that I took the time up-front to find frameworks that are well-built and reasonably documented.  I did, however, find some non-critical but annoying bugs in my dependency chain.
 
+I estimate approximately 4 hours of productive work on this project and about 20 hours of infrastructure research and testing.  The frontend took less than an hour, but I was stymied at the last minute by difficulties with Laravel's forms and ORM issues.
+
 ## Found Bugs
 
 * `artisan`, the script for managing Laravel, will allow one to set a namespace to something which will break the code.

@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('app');
 });
 Route::any('new', function () {
-    return ("so you want to add a new thing?");
+    return ("this is where you add a new item");
 });
 Route::any('edit/{edit}', function ($edit) {
-    return ("got edit $edit");
+    return ("this is to edit item $edit");
 });
 ?>
