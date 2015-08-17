@@ -39,7 +39,7 @@
 
 <div class="container">
 {!! KSD_FMS\Asset::get()
-    ->columns(array( 'Name', 'Serial', 'Date', 'Room', 'location', 'asset_type' => "Type" ))
+    ->columns(array( 'Name', 'Serial', 'Date', 'Room', 'Location', "Type" ))
     ->attributes(array(
         'id' => 'example',
         'class' => 'table table-striped',))
