@@ -54,8 +54,6 @@
 <script>$(document).ready(function(){
     $('#example').DataTable( { 'pageLength': 50 });
 });
-$('tbody tr').click(function() {
-    window.location=("edit/" + $(this).attr('id'));
-});
+$('tbody tr').click(function() { window.location=("edit/" + $(this).attr('id')); });
 </script>
 </body></html>
