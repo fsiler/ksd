@@ -9,6 +9,7 @@
     <meta name="author" content="Franklin M. Siler <me@franksiler.com>">
     <title>KSD inventory example</title>
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -40,10 +41,10 @@
 <?php //search ?>
 {!!
     KSD_FMS\Asset::get()->columns(array(
-        'Name',
-        'Serial',
-        'Date',
-        'Room'
+        'id', 'Name', 'Serial', 'Date', 'Room'
+    ))->attributes(array(
+        'id' => 'example',
+        'class' => 'table table-striped table-bordered',
     ))->render()
 !!}
 
@@ -51,4 +52,17 @@
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/datatables/media/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#example').DataTable(
+        {'columnDefs' : [
+            {
+                "targets": [0],
+                "visible": false
+            }
+        ]}
+    );
+});
+</script>
 </body></html>

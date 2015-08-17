@@ -68,7 +68,7 @@ There are also some code comments where they might be relevant to later bugfixes
 
 ## Testing
 - [W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffranksiler.com%2Fksd%2Fpublic%2F)
-- Database seeding included strings that shouldn't be in the database and strings designed to test the HTML escaping.
+- Database seeding included strings that shouldn't be in the database and strings designed to test the HTML escaping.  I even wound up patching a bug in the table generation library and sending a Pull Request to the author.
 - Manual form entry to test escaping of ampersands, carets, etc.  Although the exercise says not to worry about security, input sanitation is an essential and integral part of web dev.
 - Selenium (future)
 
@@ -102,7 +102,7 @@ It would be appropriate to add a syntax check to `artisan app:name` so that this
 *  `artisan` has many options but no autocorrect/suggest feature.
 *  `artisan` won't operate properly outside the root directory of a project- not sure if this is deliberate or a bug.
 *  Laravel leaves foreign key constraints off for SQLite by default.  I consider this a serious data integrity bug; I've hand-patched the SQLite connector with code from [https://laracasts.com/discuss/channels/general-discussion/l5-sqlite-foreign-key-support](https://laracasts.com/discuss/channels/general-discussion/l5-sqlite-foreign-key-support).  Will probably file bug report.
-*  **PR SENT** Eloquent Tables did not properly escape on output.
+*  **PR SENT** Eloquent Tables did not properly escape output.
 
 ## Dead Ends
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.
