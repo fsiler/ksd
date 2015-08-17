@@ -53,14 +53,15 @@
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="datatables/media/js/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function(){
+<script>$(document).ready(function(){
     $('#example').DataTable(
-        {'columnDefs' : [
-            {
-                "targets": [0],
-                "visible": false
-            }
+        {
+            'pageLength': 50,
+            'columnDefs': [
+                {
+                    "targets": [0],
+                    "visible": false
+                }
         ]}
     );
 });
