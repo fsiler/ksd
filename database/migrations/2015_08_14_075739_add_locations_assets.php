@@ -12,7 +12,6 @@ class AddLocationsAssets extends Migration
      */
     public function up()
     {
-        DB::raw("PRAGMA foreign_keys=ON;");
         Schema::create('locations', function (Blueprint $table) {
             $table->increments('id');
             $table->text('Location');
@@ -51,8 +50,8 @@ class AddLocationsAssets extends Migration
      */
     public function down()
     {
-        Schema::drop('locations');
         Schema::drop('assets');
+        Schema::drop('locations');
         Schema::drop('asset_types');
     }
 }

@@ -34,7 +34,6 @@ class DatabaseSeeder extends Seeder
             [ 'location_id' => 4, 'asset_type' => 2, 'Name' => "Frank's Laptop", 'Serial' => "S/N 234", 'Room' => "Frank Living Room" ],
             [ 'location_id' => 1, 'asset_type' => 2, 'Name' => "Joe's Laptop", 'Serial' => "S/N 345", 'Room' => "Sprint Space" ],
             [ 'location_id' => 5, 'asset_type' => 3, 'Name' => "Ampersand & && test", 'Serial' => "S/N 345", 'Room' => "Hello back caret <" ],
-            [ 'location_id' => 1000000, 'asset_type' => 3, 'Name' => "Ampersand & && test", 'Serial' => "S/N 345", 'Room' => "Should break referential integrity" ]
         ]);
 
         Model::reguard();
