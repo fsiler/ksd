@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Asset extends Model
 {
-    //
+    use \Stevebauman\EloquentTable\TableTrait;
     public function location()
     {
         return $this->belongsTo('Location');
@@ -22,6 +22,7 @@ class Asset extends Model
 }
 class Location extends Model
 {
+    use \Stevebauman\EloquentTable\TableTrait;
     public function assets()
     {
         return $this->hasMany('Asset');
@@ -30,6 +31,7 @@ class Location extends Model
 
 class AssetType extends Model
 {
+    use \Stevebauman\EloquentTable\TableTrait;
     public function assets()
     {
         return $this->hasMany('Asset');

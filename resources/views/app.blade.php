@@ -38,35 +38,15 @@
 
     <div class="container">
 <?php //search ?>
+{!!
+    KSD_FMS\Asset::get()->columns(array(
+        'Name',
+        'Serial',
+        'Date',
+        'Room'
+    ))->render()
+!!}
 
-<table>
-<?
-// ADD NEW ITEMS
-?>
-<tr><?  // generate header row
-$fields = Schema::getColumnListing('assets');
-foreach ($fields as $index=>$name)
-{
-    if(ctype_upper($name[0]))
-    {
-        echo "<th>$name</th>";
-    }
-}
-?></tr>
-<?
-$assets = KSD_FMS\Asset::find(1);
-var_dump($assets);
-
-// display data, probably best done in a view
-// echo htmlentities($output, ENT_QUOTES, 'UTF-8');
-//var_dump(KSD_FMS\Asset::all());
-//var_dump(KSD_FMS\AssetType::all());
-//var_dump(KSD_FMS\Location::all());
-
-?>
-</table>
-
-{{ KSD_FMS\Asset::get() }}
 </div>
 
 <script src="jquery/dist/jquery.min.js"></script>
