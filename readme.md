@@ -66,6 +66,11 @@ There are also some code comments where they might be relevant to later bugfixes
 1. I built the app and this document both on my Dreamhost shared hosting account and on my Macbook Pro running OS 10.9.5.  There are many merges in version control resulting from my deliberate alternating between machines to ensure that features would work "across the board".
 2. I'm writing in active voice.  Scientists tend to use passive voice for lab reports, but I don't like the implication that coding fairies came in and did the work here.
 
+## Heavy work: data model and integrity
+Most of the heavy work, as I've found common across projects, was developing a sound data model.  I found that the ORM, true to experience, resulted in a fair bit of repeated code and didn't add much value, but I stuck with it in an attempt to get the feel of Laravel.  I did find a serious data integrity bug: Laravel switched off foreign key constraints, and there was no straightforward option to turn them back on.  After satisfying myself that the backend was reasonably safe, I also found that there was a bug in the table generator I found.
+
+The UI end- including Datatables for ease of search and filtering, went very quickly.
+
 ## Testing
 - [W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Ffranksiler.com%2Fksd%2Fpublic%2F)
 - Database seeding included strings that shouldn't be in the database and strings designed to test the HTML escaping.  I even wound up patching a bug in the table generation library and sending a Pull Request to the author.

@@ -59,5 +59,8 @@
 <script>$(document).ready(function(){
     $('#example').DataTable( { 'pageLength': 50 });
 });
+$('table tr').click(function() {
+    alert("clicked row!");
+});
 </script>
 </body></html>
