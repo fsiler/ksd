@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>KSD inventory example</title>
- <!-- Bootstrap core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="bootstrap-default/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="District of Kansas example inventory application">
+    <meta name="author" content="Franklin M. Siler <me@franksiler.com>">
+    <title>KSD inventory example</title>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -63,10 +59,10 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
 //var_dump(KSD_FMS\Location::all());
 
 ?>
-{{ KSD_FMS\Asset::all() }}
 </table>
-</div>
 
+{{ KSD_FMS\Asset::all() }}
+</div>
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
