@@ -37,20 +37,15 @@
       </div>
     </nav>
 
-    <div class="container">
-<?php //search ?>
-{!!
-    KSD_FMS\Asset::get()->columns(array(
-        'Name', 'Serial', 'Date', 'Room', 'location', 'asset_type' => "Type"
-    ))->attributes(array(
+<div class="container">
+{!! KSD_FMS\Asset::get()
+    ->columns(array( 'Name', 'Serial', 'Date', 'Room', 'location', 'asset_type' => "Type" ))
+    ->attributes(array(
         'id' => 'example',
         'class' => 'table table-striped',))
-    ->modifyRow('mod1', function($asset) {
-        return array('id' => $asset->id);
-    })
-     ->render()
+    ->modifyRow('mod1', function($asset) { return array('id' => $asset->id); })
+    ->render()
 !!}
-
 </div>
 
 <script src="jquery/dist/jquery.min.js"></script>
@@ -60,7 +55,7 @@
     $('#example').DataTable( { 'pageLength': 50 });
 });
 $('tbody tr').click(function() {
-    alert("clicked row! " + $(this).attr('id'));
+    window.location=("?edit=" + $(this).attr('id'));
 });
 </script>
 </body></html>
