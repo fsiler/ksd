@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c248cc2f059a3e82b737855e9df2f53",
+    "hash": "98c225e0d29657a8cbbd40540a6e1fe7",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1091,16 +1091,16 @@
         },
         {
             "name": "stevebauman/eloquenttable",
-            "version": "v1.1.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/stevebauman/eloquent-table.git",
-                "reference": "90bee9aab6b37430b699c3063baaef3169609a19"
+                "url": "https://github.com/fsiler/eloquent-table.git",
+                "reference": "eec3142e6dda673719a1b0d795e476c22f0308f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/eloquent-table/zipball/90bee9aab6b37430b699c3063baaef3169609a19",
-                "reference": "90bee9aab6b37430b699c3063baaef3169609a19",
+                "url": "https://api.github.com/repos/fsiler/eloquent-table/zipball/eec3142e6dda673719a1b0d795e476c22f0308f3",
+                "reference": "eec3142e6dda673719a1b0d795e476c22f0308f3",
                 "shasum": ""
             },
             "require": {
@@ -1113,7 +1113,6 @@
                     "Stevebauman\\EloquentTable\\": "src/Stevebauman/EloquentTable/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1131,7 +1130,10 @@
                 "php",
                 "table"
             ],
-            "time": "2015-06-01 17:58:19"
+            "support": {
+                "source": "https://github.com/fsiler/eloquent-table/tree/master"
+            },
+            "time": "2015-08-17 07:58:55"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3165,7 +3167,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "stevebauman/eloquenttable": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

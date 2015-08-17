@@ -4,11 +4,17 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+    {
+       "type": "vcs",
+       "url": "https://github.com/fsiler/eloquent-table"
+    }
+    ],
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "^5.1",
         "fxp/composer-asset-plugin": "^1.0",
-        "stevebauman/eloquenttable": "^1.1",
+        "stevebauman/eloquenttable": "dev-master",
         "bower-asset/bootstrap": "^3.3",
         "bower-asset/datatables": "^1.10"
     },

@@ -3223,24 +3223,24 @@
     },
     {
         "name": "stevebauman/eloquenttable",
-        "version": "v1.1.5",
-        "version_normalized": "1.1.5.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/stevebauman/eloquent-table.git",
-            "reference": "90bee9aab6b37430b699c3063baaef3169609a19"
+            "url": "https://github.com/fsiler/eloquent-table.git",
+            "reference": "eec3142e6dda673719a1b0d795e476c22f0308f3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/stevebauman/eloquent-table/zipball/90bee9aab6b37430b699c3063baaef3169609a19",
-            "reference": "90bee9aab6b37430b699c3063baaef3169609a19",
+            "url": "https://api.github.com/repos/fsiler/eloquent-table/zipball/eec3142e6dda673719a1b0d795e476c22f0308f3",
+            "reference": "eec3142e6dda673719a1b0d795e476c22f0308f3",
             "shasum": ""
         },
         "require": {
             "illuminate/support": "4.* | 5.*",
             "php": ">=5.4.0"
         },
-        "time": "2015-06-01 17:58:19",
+        "time": "2015-08-17 07:58:55",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3248,7 +3248,6 @@
                 "Stevebauman\\EloquentTable\\": "src/Stevebauman/EloquentTable/"
             }
         },
-        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -3265,6 +3264,9 @@
             "laravel",
             "php",
             "table"
-        ]
+        ],
+        "support": {
+            "source": "https://github.com/fsiler/eloquent-table/tree/master"
+        }
     }
 ]
