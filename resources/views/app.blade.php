@@ -25,7 +25,8 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
         <? // create menu items
-            foreach (["Assets" => "assets", "Asset Types" => "asset_types", "Locations" => "locations"] as $name => $url)
+        $menu_items = ["Assets" => "assets", "Asset Types" => "asset_types", "Locations" => "locations"];
+            foreach ($menu_items as $name => $url)
             {
                 echo "<li><a href=\"?page=$url\">$name</a></li>";
             }
@@ -43,7 +44,8 @@
 // ADD NEW ITEMS
 ?>
 <tr><?  // generate header row
-foreach (Schema::getColumnListing('assets') as $index=>$name)
+$fields = Schema::getColumnListing('assets');
+foreach ($fields as $index=>$name)
 {
     if(ctype_upper($name[0]))
     {
@@ -52,6 +54,9 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
 }
 ?></tr>
 <?
+$assets = KSD_FMS\Asset::find(1);
+var_dump($assets);
+
 // display data, probably best done in a view
 // echo htmlentities($output, ENT_QUOTES, 'UTF-8');
 //var_dump(KSD_FMS\Asset::all());
@@ -61,7 +66,7 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
 ?>
 </table>
 
-{{ KSD_FMS\Asset::all() }}
+{{ KSD_FMS\Asset::get() }}
 </div>
 
 <script src="jquery/dist/jquery.min.js"></script>

@@ -38,7 +38,7 @@ class AddLocationsAssets extends Migration
             $table->text('Name');
             $table->text('Serial');
             $table->text('Room');
-            $table->date('Date')->default("now"); // assuming this should not be editable
+            $table->date('Date')->default(gmdate(DATE_ISO8601)); // assuming this should not be editable
             $table->nullabletimestamps();
         });
     }
