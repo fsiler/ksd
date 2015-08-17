@@ -59,6 +59,8 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
 // display data, probably best done in a view
 // echo htmlentities($output, ENT_QUOTES, 'UTF-8');
 var_dump(KSD_FMS\Asset::all());
+var_dump(KSD_FMS\AssetType::all());
+var_dump(KSD_FMS\Location::all());
 ?>
 </table>
 </div>
