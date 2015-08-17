@@ -105,6 +105,12 @@ It would be appropriate to add a syntax check to `artisan app:name` so that this
 - Larasset is a neat idea but requires more tooling than I had time to deal with in the short run.  I think component-installer is ultimately better for this application.
 - Composer itself is no good for directly managing assets; however, indirectly using `bower` through the `fxp/composer-asset-plugin` package seems to manage frontend plugins reasonably well.
 - [Datatables Editor](https://editor.datatables.net/) could be very compelling- in fact, it could negate most of the work done on the project.  However, it's not free and the licensing agreement has a choice of laws of Scotland.  So I'm using datatables only for search and hand-rolled the table edit functions.
+- [laravel-datatables](https://github.com/yajra/laravel-datatables) could be very powerful but was an extra layer of "yak shaving" that was beyond the scope of the problem here.
+
+## Dev references
+- [Notes on getting column names](http://stackoverflow.com/questions/19951787/laravel-4-get-column-names)
+- [Composer Namespaces](https://jtreminio.com/2012/10/composer-namespaces-in-5-minutes/)
+- [Datatables search](https://datatables.net/examples/api/multi_filter.html)
 
 ## Below this is boilerplate from Laravel's `readme.md`
 ### Laravel PHP Framework

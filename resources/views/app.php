@@ -43,6 +43,9 @@
 <?php //search ?>
 
 <table>
+<?
+// ADD NEW ITEMS
+?>
 <tr><?  // generate header row
 foreach (Schema::getColumnListing('assets') as $index=>$name)
 {
@@ -52,10 +55,11 @@ foreach (Schema::getColumnListing('assets') as $index=>$name)
     }
 }
 ?></tr>
-            </table>
 <?
-// "add new" stuff
+// display data, probably best done in a view
+// echo htmlentities($output, ENT_QUOTES, 'UTF-8');
 ?>
+</table>
 </div>
 
 
