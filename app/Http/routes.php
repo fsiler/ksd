@@ -14,5 +14,9 @@
 // TODO: CSRF, form protection
 
 Route::get('/', function () {
-    return view('app', ['name' => 'Frank']);
+    return view('app');
 });
+Route::any('edit/{edit}', function ($edit) {
+    return ("got edit $edit");
+});
+?>
