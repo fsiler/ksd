@@ -30,12 +30,12 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('assets')->insert([
-            [ 'location_id' => 4, 'asset_type' => 1, 'Name' => "Frank's computer", 'Serial' => "S/N 123", 'Room' => "Frank Office" ],
-            [ 'location_id' => 4, 'asset_type' => 2, 'Name' => "Frank's Laptop", 'Serial' => "S/N 234", 'Room' => "Frank Living Room" ],
-            [ 'location_id' => 1, 'asset_type' => 2, 'Name' => "Joe's Laptop", 'Serial' => "S/N 345", 'Room' => "Sprint Space" ],
-            [ 'location_id' => 3, 'asset_type' => 3, 'Name' => "Ampersand & && test", 'Serial' => "S/N 345", 'Room' => "Hello back caret <" ],
-            [ 'location_id' => 2, 'asset_type' => 2, 'Name' => "Hello World test", 'Serial' => "00000345", 'Room' => "Unknown" ],
-            [ 'location_id' => 5, 'asset_type' => 3, 'Name' => "This is a super duper long name just to see how the page and table handles super long stuff", 'Serial' => "S/N 345", 'Room' => "and again some really really really long text to be really obnoxious, expecially on phones" ],
+            [ 'location' => 4, 'asset_type' => 1, 'Name' => "Frank's computer", 'Serial' => "S/N 123", 'Room' => "Frank Office" ],
+            [ 'location' => 4, 'asset_type' => 2, 'Name' => "Frank's Laptop", 'Serial' => "S/N 234", 'Room' => "Frank Living Room" ],
+            [ 'location' => 1, 'asset_type' => 2, 'Name' => "Joe's Laptop", 'Serial' => "S/N 345", 'Room' => "Sprint Space" ],
+            [ 'location' => 3, 'asset_type' => 3, 'Name' => "Ampersand & && test", 'Serial' => "S/N 345", 'Room' => "Hello back caret <" ],
+            [ 'location' => 2, 'asset_type' => 2, 'Name' => "Hello World test", 'Serial' => "00000345", 'Room' => "Unknown" ],
+            [ 'location' => 5, 'asset_type' => 3, 'Name' => "This is a super duper long name just to see how the page and table handles super long stuff", 'Serial' => "S/N 345", 'Room' => "and again some really really really long text to be really obnoxious, expecially on phones" ],
         ]);
 
         Model::reguard();

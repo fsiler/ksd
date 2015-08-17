@@ -30,8 +30,8 @@ class AddLocationsAssets extends Migration
         Schema::create('assets', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('location_id')->unsigned();
-            $table->foreign('location_id')->references('id')->on('locations')->onUpdate("Cascade")->onDelete("Restrict");
+            $table->integer('location')->unsigned();
+            $table->foreign('location')->references('id')->on('locations')->onUpdate("Cascade")->onDelete("Restrict");
             $table->integer('asset_type')->unsigned();
             $table->foreign('asset_type')->references('id')->on('asset_types')->onUpdate("Cascade")->onDelete("Restrict");
 

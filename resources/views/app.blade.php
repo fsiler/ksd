@@ -29,7 +29,7 @@
         $menu_items = ["Assets" => "assets", "Asset Types" => "asset_types", "Locations" => "locations"];
             foreach ($menu_items as $name => $url)
             {
-                echo "<li><a href=\"?page=$url\">$name</a></li>";
+//                echo "<li><a href=\"?page=$url\">$name</a></li>";
             }
         ?>
           </ul>
@@ -41,11 +41,14 @@
 <?php //search ?>
 {!!
     KSD_FMS\Asset::get()->columns(array(
-        'id', 'Name', 'Serial', 'Date', 'Room'
+        'Name', 'Serial', 'Date', 'Room', 'location', 'asset_type' => "Type"
     ))->attributes(array(
         'id' => 'example',
-        'class' => 'table table-striped table-bordered',
-    ))->render()
+        'class' => 'table table-striped',))
+    ->modifyRow('mod1', function($asset) {
+        return array('id' => $asset->id);
+    })
+     ->render()
 !!}
 
 </div>
@@ -54,16 +57,7 @@
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="datatables/media/js/jquery.dataTables.min.js"></script>
 <script>$(document).ready(function(){
-    $('#example').DataTable(
-        {
-            'pageLength': 50,
-            'columnDefs': [
-                {
-                    "targets": [0],
-                    "visible": false
-                }
-        ]}
-    );
+    $('#example').DataTable( { 'pageLength': 50 });
 });
 </script>
 </body></html>
