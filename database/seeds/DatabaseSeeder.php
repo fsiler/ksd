@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         DB::table('locations')->insert([ 'Location' => "KCK" ]);
         DB::table('locations')->insert([ 'Location' => "Topeka" ]);
         DB::table('assets')->insert([ 'location_id' => 1, 'asset_type' => 1, 'Name' => "Frank's computer", 'Serial' => "S/N 123", 'Room' => "Frank Office" ]);
+        DB::table('assets')->insert([ 'location_id' => 1, 'asset_type' => 1, 'Name' => "Frank's laptop", 'Serial' => "S/N 234", 'Room' => "Frank Office" ]);
+        DB::table('assets')->insert([ 'location_id' => 2, 'asset_type' => 1, 'Name' => "Joe's laptop", 'Serial' => "S/N 345", 'Room' => "Frank Office" ]);
 
         Model::reguard();
     }

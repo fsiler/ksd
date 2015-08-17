@@ -1254,6 +1254,7 @@ return array(
     'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => $vendorDir . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
     'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => $vendorDir . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
     'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => $vendorDir . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+    'KSD_FMS\\Asset' => $baseDir . '/app/Asset.php',
     'KSD_FMS\\Console\\Commands\\Inspire' => $baseDir . '/app/Console/Commands/Inspire.php',
     'KSD_FMS\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'KSD_FMS\\Events\\Event' => $baseDir . '/app/Events/Event.php',
