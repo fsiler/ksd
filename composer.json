@@ -16,7 +16,8 @@
         "fxp/composer-asset-plugin": "^1.0",
         "stevebauman/eloquenttable": "dev-master",
         "bower-asset/bootstrap": "^3.3",
-        "bower-asset/datatables": "^1.10"
+        "bower-asset/datatables": "^1.10",
+        "laravelcollective/html": "^5.1"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",

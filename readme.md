@@ -3,6 +3,8 @@
 
 project developed as a code demonstration; released under MIT or BSD 3-clause license
 
+Please note that the authoritative source lives at [Bitbucket](https://bitbucket.org/fsiler/ksd); there is a copy at [GitHub](https://github.com/fsiler/ksd) as well.
+
 # Requirements as provided in "Instructions" document
 ### KSD [Code Exercise Instructions](KSD Code Exercise.v2.pdf)
 The following is the code exercise that we give our candidates.
